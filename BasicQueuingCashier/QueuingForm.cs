@@ -13,16 +13,18 @@ namespace BasicQueuingCashier
 {
     public partial class QueuingForm : Form
     {
-        
+
         private CashierClass cashier;
         private CashierWindowQueueForm queueList;
-        
+        CustomerView nextqueue = new CustomerView();
+
         public QueuingForm()
         {
             InitializeComponent();
             cashier = new CashierClass();
             queueList = new CashierWindowQueueForm();
             queueList.Show();
+            
         }
 
         private void btnCashier_Click(object sender, EventArgs e)
@@ -32,9 +34,6 @@ namespace BasicQueuingCashier
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);  
         }
 
-        private void lblQueue_Click(object sender, EventArgs e)
-        {
-            
-        }
+ 
     }
 }

@@ -55,7 +55,6 @@
             this.lblQueue.Name = "lblQueue";
             this.lblQueue.Size = new System.Drawing.Size(0, 82);
             this.lblQueue.TabIndex = 3;
-            this.lblQueue.Click += new System.EventHandler(this.lblQueue_Click);
             // 
             // label1
             // 
