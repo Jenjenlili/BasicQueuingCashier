@@ -15,7 +15,6 @@ namespace BasicQueuingCashier
     {
         private CashierClass cashier;
         private CashierWindowQueueForm queueList;
-        
         public QueuingForm()
         {
             InitializeComponent();
