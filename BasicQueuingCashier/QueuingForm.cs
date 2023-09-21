@@ -13,11 +13,9 @@ namespace BasicQueuingCashier
 {
     public partial class QueuingForm : Form
     {
-
         private CashierClass cashier;
         private CashierWindowQueueForm queueList;
-        CustomerView nextqueue = new CustomerView();
-
+        
         public QueuingForm()
         {
             InitializeComponent();
@@ -33,7 +31,5 @@ namespace BasicQueuingCashier
             CashierClass.getNumberInQueue = lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);  
         }
-
- 
     }
 }
